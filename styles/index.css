@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Kameron&display=swap');
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  --background: #000000;
+  --primary: #FDA4BA;
+  font-family: 'Roboto', sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.hero {
+  background-color: var(--background);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  color: var(--primary);
+}
+
+.hero__container {
+  /* max-width: 1300px; */
+  padding: 0 4.375rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  /* flex-wrap: wrap-reverse; */
+}
+
+.hero-left {
+  width: 50%;
+  flex-grow: 1;
+}
+
+.hero-left__top {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hero__image {
+  width: 50%;
+  aspect-ratio: 1/1;
+}
+
+.hero__logo {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+}
+
+.hero__logo>img {
+  height: 100px;
+  width: 100px;
+  object-fit: contain;
+  object-position: center;
+}
+
+.logo__text {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Kameron', serif;
+  font-size: 1.25rem;
+  font-weight: 100;
+}
+
+.hero__title {
+  font-family: 'Kameron', serif;
+  text-transform: uppercase;
+  font-size: 3.75rem;
+  border-bottom: 3px solid var(--primary);
+  font-weight: 100;
+  margin: 0;
+  margin-top: 8rem;
+  width: max-content;
+}
+
+.hero__subtitle {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 100;
+  margin: 2rem 0;
+}
+
+.hero__action {
+  margin-top: 2rem;
+  background-color: var(--primary);
+  border: 2px solid var(--primary);
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  padding: 0.5rem 4.375rem;
+  cursor: pointer;
+  transition: 0.3s;
+  position: relative;
+}
+
+/* 
+.hero__action::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  background-color: black;
+  transition: .3s;
+} */
+
+.hero__action:hover {
+  /* width: 100%; */
+  background-color: var(--background);
+  color: var(--primary);
+}
